@@ -11,7 +11,7 @@ body {
 .foto {
     width: 100%;
     height: 100vh;
-    background: url(amg.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url(contact.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -23,7 +23,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    text-shadow: 1px 1px 2px rgb(0, 0, 0), 0 0 1em rgb(0, 0, 0), 0 0 0.2em rgb(0, 0, 0);
 }
 
 .logo {
@@ -33,7 +32,6 @@ body {
 
 .logo1 {
     width: 320px;
-    box-shadow: .25em .25em 1em;
 }
 
 
@@ -54,7 +52,7 @@ body {
     content: '';
     height: 3px;
     width: 0;
-    background-color: #1affa3;
+    background-color: #d1d1e0;
     position: absolute;
     left: 0;
     bottom: -10px;
@@ -69,7 +67,6 @@ body {
     display: flex;
     justify-content: center;
     color: #fff;
-    text-shadow: 1px 1px 2px rgb(0, 0, 0), 0 0 1em rgb(0, 0, 0), 0 0 0.2em rgb(0, 0, 0);
 }
 
 .container {
@@ -86,7 +83,6 @@ body {
     justify-content: center;
     justify-content: space-between;
     color: #fff;
-    text-shadow: 1px 1px 2px rgb(0, 0, 0), 0 0 1em rgb(0, 0, 0), 0 0 0.2em rgb(0, 0, 0);
 }
 
 
@@ -94,28 +90,24 @@ body {
     color: white;
     flex-grow: 1;
     flex-basis: 100%;
-    text-shadow: 1px 1px 2px rgb(0, 0, 0), 0 0 1em rgb(0, 0, 0), 0 0 0.2em rgb(0, 0, 0);
 }
 
 .AMG {
     color: white;
     flex-grow: 1;
     flex-basis: 100%;
-    text-shadow: 1px 1px 2px rgb(0, 0, 0), 0 0 1em rgb(0, 0, 0), 0 0 0.2em rgb(0, 0, 0);
 }
 
 .MAY {
     color: white;
     flex-grow: 1;
     flex-basis: 100%;
-    text-shadow: 1px 1px 2px rgb(0, 0, 0), 0 0 1em rgb(0, 0, 0), 0 0 0.2em rgb(0, 0, 0);
 }
 
 .Nieuw {
     color: white;
     flex-grow: 1;
     flex-basis: 100%;
-    text-shadow: 1px 1px 2px rgb(0, 0, 0), 0 0 1em rgb(0, 0, 0), 0 0 0.2em rgb(0, 0, 0);
 }
 
 footer {
@@ -143,7 +135,7 @@ footer {
 }
 
 .aankoop a:hover {
-    color: #1affa3;
+    color: #d1d1e0;
     text-decoration: underline;
 }
 
@@ -163,7 +155,7 @@ footer {
 }
 
 .aankoopadvies a:hover {
-    color: #1affa3;
+    color: #d1d1e0;
     text-decoration: underline;
 }
 
@@ -183,7 +175,7 @@ footer {
 }
 
 .diensten a:hover {
-    color: #1affa3;
+    color: #d1d1e0;
     text-decoration: underline;
 }
 
@@ -203,7 +195,7 @@ footer {
 }
 
 .technologie a:hover {
-    color: #1affa3;
+    color: #d1d1e0;
     text-decoration: underline;
 }
 
@@ -223,7 +215,7 @@ footer {
 }
 
 .modellen a:hover {
-    color: #1affa3;
+    color: #d1d1e0;
     text-decoration: underline;
 }
 
@@ -243,7 +235,7 @@ footer {
 }
 
 .overmercedesbenz a:hover {
-    color: #1affa3;
+    color: #d1d1e0;
     text-decoration: underline;
 }
 
@@ -260,4 +252,104 @@ footer {
 
 .Github {
     color: white;
+}
+
+.contact {
+    min-height: 100vh;
+    background: #08071d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("contact.jpg") no-repeat center center/cover;
+}
+
+
+.contact form {
+    width: 670px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    flex-wrap: wrap;
+}
+
+.contact form h1 {
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+    margin-top: 20px;
+    width: 500px;
+    text-align: center;
+}
+
+.contact form input {
+    width: 290px;
+    height: 40px;
+    padding-left: 10px;
+    outline: none;
+    border: none;
+    font-size: 15px;
+    margin-bottom: 10px;
+    background: none;
+    border-bottom: 2px solid rgb(0, 0, 0);
+}
+
+.contact form input::placeholder {
+    color: rgb(0, 0, 0);
+}
+
+.contact form #lastName,
+.contact form #mobile {
+    margin-left: 20px;
+}
+
+.contact form h3 {
+    color: rgb(0, 0, 0);
+    font-weight: 300;
+    width: 600px;
+    margin-top: 20px;
+}
+
+.contact form textarea {
+    background: none;
+    border: none;
+    border-bottom: 2px solid rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
+    font-weight: 200;
+    font-size: 15px;
+    padding: 10px;
+    outline: none;
+    min-width: 600px;
+    max-width: 600px;
+    min-height: 80px;
+    max-height: 80px;
+}
+
+textarea::-webkit-scrollbar {
+    width: 1em;
+}
+
+textarea::-webkit-scrollbar-thumb {
+    background-color: rgba(194, 194, 194, 0.713);
+}
+
+.contact form #button {
+    border: none;
+    background: #fff;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #333;
+    width: 100px;
+    padding: 0;
+    margin-right: 500px;
+    margin-bottom: 30px;
+    transition: 0.3s;
+}
+
+.contact form #button:hover{
+    opacity: 0.7;
 }
